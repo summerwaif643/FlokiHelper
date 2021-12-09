@@ -1,10 +1,10 @@
 .color1{
-    background-color: red;
+    background-color: #559EE0;
     
 }
 
 .color2{
-    background-color: salmon;
+    background-color: white;
 }
 
 .width{
@@ -12,7 +12,7 @@
 }
 
 .round-button{
-    background-color: blue;
+    background-color: white;
     border: none;
     border-radius: 80%;
     color: white;
@@ -26,9 +26,21 @@
 
     justify-content: center;
     text-align: center;
+    
 }
 
 .round-button::after{
     display: inline-block;
     content: "+";
+    color: #559EE0;
+}
+
+.add-step{
+    background: none;
+    border: none;
+    margin-top: 2%;
+}
+
+.step{
+
 }

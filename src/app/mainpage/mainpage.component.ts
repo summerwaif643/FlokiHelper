@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SafeHtml } from '@angular/platform-browser';
 import { FormService } from '../form.service';
 
 @Component({
@@ -8,12 +9,24 @@ import { FormService } from '../form.service';
 })
 export class MainpageComponent implements OnInit {
 
+  guideTitle = "";
+  steps = []; 
+  card = "";
+  
   constructor(
     private data: FormService,
   ) { }
 
   ngOnInit(): void {
-    console.log(this.data.getGuide())
+    //get guide title 
+    this.guideTitle = this.data.getGuide()
+
+  }
+
+  onAdd(): void{
+    //build the card in this.card 
+    //
+    this.card = "<a> prova </a>";
   }
 
 }

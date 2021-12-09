@@ -1,15 +1,34 @@
 
 <div class="container-fluid h-100">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">{{guideTitle}}</a>
+      </nav>
+
+
     <div class="row vh-100">
         
         <!--Add media col-->
-        <div class="col color1 text-center">
-            <button class="round-button align-middle"> </button>
+        <div class="col color1 text-center align-middle">
+            <button class="round-button"> </button>
+            
+            <div class="row justify-content-center">
+            Aggiungi media...
+            </div>
         </div>
 
-        <!--Steps col-->
+
+
         <div class="col-8 color2">
-            a
+
+            <!--Actual steps to be added-->
+            <div [innerHtml]="card" class="step"></div>
+            
+            
+            <!--Steps adding button-->
+            <button class="add-step" (click)="onAdd()"> 
+            Premi qui per aggiungere uno step...    
+            </button>
         </div>
 
     </div>
